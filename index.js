@@ -23,12 +23,19 @@ const cards = [
   },
 ];
 
-const onlyCardWithIdTwo = null;
+//Aufgabe 1
+const onlyCardWithIdTwo = cards.filter((card) => card.id==="2");
+console.log(onlyCardWithIdTwo, "test");
 
-const allCardsWith3Tags = null;
+//Aufgabe 2
+const allCardsWith3Tags = cards.filter((card)=> card.tags.length === 3);
+console.log(allCardsWith3Tags);
 
-const allCardsThatAreNotBookmarked = null;
+//Aufgabe 3
+const allCardsThatAreNotBookmarked = cards.filter((card)=>card.isBookmarked === false);
+console.log(allCardsThatAreNotBookmarked);
 
+//Aufgabe 4
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
 
 export {
